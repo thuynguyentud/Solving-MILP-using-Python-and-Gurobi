@@ -1,8 +1,8 @@
 # 📦 Facility Location Optimization with Stochastic Demand using Python & Gurobi
 
 This project is a hands-on implementation of the **Facility Location Problem (FLP)** using Python and the Gurobi optimization solver. The scenarios and data used are based on a case study from the [MITx MicroMasters program in Supply Chain Management](https://micromasters.mit.edu/scm/), module [Supply Chain Design](https://www.edx.org/learn/supply-chain-design/massachusetts-institute-of-technology-supply-chain-design), which I took in 2022. 
-However, real-world demand often fluctuates; therefore, optimising for a single deterministic demand point may leave the network unable to serve customers when actual demand is higher than expected.  
-The chance-constrained extension forces the model to select a network configuration that is **feasible in at least 95 % of plausible demand scenarios**, providing an explicit, controllable service-level guarantee.
+
+However, real-world demand often fluctuates; therefore, optimising for a single deterministic demand point may leave the network unable to serve customers when actual demand is higher than expected. To address this, I extended the original model with a chance-constrained MILP, which forces the model to select a network configuration that is feasible in at least 95 % of plausible demand scenarios, providing an explicit, controllable service-level guarantee.
 
 This project is for educational and personal portfolio use only.
 
